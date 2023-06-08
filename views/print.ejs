@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+   
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+     
+      <!-- site metas -->
+      <title>قائمة المتبرعين</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+    
+   </head>
+
+
+   <!-- body -->
+
+   <body class="main-layout">
+
+
+      <div class="top-bar">
+         <a link rel="" type="" href="https://www.facebook.com/profile.php?id=100089577814064">
+         <img src="images/collage logo.png" alt="Sponsor Logo 1" width="130" height="130">
+       </a>
+       <a  link rel="" type="" href="https://www.facebook.com/CETZ.EDU.LY">
+         <img src="images/armas.png" alt="Sponsor Logo 2" width="150" height="150">
+       </a>
+       <button class="print-button" onclick="window.print()">طباعة</button>
+                  
+            <button>
+               
+               <a href="/<%= data[0].bloodType %>"> تغير الشكل </a>
+               
+               
+            </button>
+       
+       </div>
+       
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         
+      <div class="testimonial">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>BLOOD DONAITERS <%= data[0].bloodType %> </h2>
+                     <p>متبرعين فصيلة الدم  </p>
+                  </div>
+               </div>
+            </div>
+
+           
+      <!--  هنا  قسم المتبرعين    -->
+
+   
+      <main>
+         <ul class="students-list" style="direction: rtl;">
+            <% data.forEach(person => { %>
+           <li><span><%= person.name %></span> - <span>العمر: <%= person.age %></span> - <span>فصيلة الدم: <%= person.bloodType %></span> - <span>رقم الهاتف: <%= person.phoneNo %></span></li>
+           <% }); %>
+         </ul>
+       </main>
+
+
+
+
+
+    
+     <!--نهاية قسم المتبرعين -->
+
+
+
+                        <div class="carousel-item">
+                           <div class="container">
+                              <div class="carousel-caption">
+                                 <div class="row">
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <i><img src="images/tes.jpg" alt="#"/></i>
+                                          <h4>JCKOLO</h4>
+                                          <span>(It is a long )</span>
+                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-6 margin_boot">
+                                       <div class="test_box">
+                                          <i><img src="images/tes1.jpg" alt="#"/></i>
+                                          <h4>ROCOYO</h4>
+                                          <span>(It is a long )</span>
+                                          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as </p>
+                                       </div>
+                                 </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                    
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end testimonial -->
+      </div>
+      <!--  footer -->
+      <footer id="contact">
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <div class="titlepage">
+                        <h2>Contact Us</h2>
+                     </div>
+                  </div>
+                  <div class="col-md-8">
+                     <ul class="location_icon">
+                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> zuwara</li>
+                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
+                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
+                     </ul>
+                  </div>
+                  
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <p> Armas
+                           Organization <a href="https://html.design/"></a></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
