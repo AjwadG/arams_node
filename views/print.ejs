@@ -1,62 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
+<html lang="en"><head>
 
    
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <!-- mobile metas -->
-     
-      <!-- site metas -->
-      <title>قائمة المتبرعين</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
-      <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
-    
-   </head>
-
-
-   <!-- body -->
-
-   <body class="main-layout">
-
-
-      <div class="top-bar">
-         <a link rel="" type="" href="https://www.facebook.com/profile.php?id=100092635201134">
-         <img src="images/collage logo.png" alt="Sponsor Logo 1" width="130" height="130">
-       </a>
-       <a  link rel="" type="" href="/">
-         <img src="images/armas.png" alt="Sponsor Logo 2" width="150" height="150">
-       </a>
-       <button class="print-button" onclick="window.print()">طباعة</button>
-                  
-            <button>
-               
-               <a href="/<%= data[0].bloodType %>"> تغير الشكل </a>
-               
-               
-            </button>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>قائمة المتبرعين</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif">
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   <!--[if lt IE 9]>
+   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+   
+   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+ 
+ 
+ 
+ </head>
+ 
+ 
+ <body class="main-layout">
+ 
+ 
+ <div class="top-bar">
+   <a link="" rel="" type="" href="https://www.facebook.com/profile.php?id=100092635201134">
+   <img src="images/collage logo.png" alt="Sponsor Logo 1" width="130" height="130">
+   </a>
+   <a link="" rel="" type="" href="/">
+   <img src="images/armas.png" alt="Sponsor Logo 2" width="150" height="150">
+   </a>
+     <button class="print-button" onclick="window.print()">طباعة</button>
+          
+    <button>
        
-       </div>
+       <a href="/<%= data[0].bloodType %>"> تغير الشكل </a>
        
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
+       
+    </button>
+ 
+  </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- body -->
+ 
+ 
+   
+ 
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#"></div>
+   </div>
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -128,45 +144,45 @@
       <!-- end testimonial -->
       </div>
       <!--  footer -->
-      <footer id="contact">
-         <div class="footer">
+         <!--  footer -->
+   <footer id="contact">
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="titlepage">
+                     <h2>Contact Us</h2>
+                  </div>
+               </div>
+               <div class="col-md-8">
+                  <ul class="location_icon">
+                     <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>zuwara</li>
+                     <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a>091-8591985</li>
+                     <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>Ngo.armas@gmail.com</li>
+                  </ul>
+               </div>
+               
+            </div>
+         </div>
+         <div class="copyright">
             <div class="container">
                <div class="row">
-                  <div class="col-md-4">
-                     <div class="titlepage">
-                        <h2>Contact Us</h2>
-                     </div>
-                  </div>
-                  <div class="col-md-8">
-                     <ul class="location_icon">
-                        <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a> zuwara</li>
-                        <li><a href="#"><i class="fa fa-volume-control-phone" aria-hidden="true"></i></a> +71 9087654321</li>
-                        <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
-                     </ul>
-                  </div>
-                  
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p> Armas
-                           Organization <a href="https://html.design/"></a></p>
-                     </div>
+                  <div class="col-md-12">
+                     <p>Copyright By armas organization</p>
                   </div>
                </div>
             </div>
          </div>
-      </footer>
-      <!-- end footer -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-   </body>
-</html>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+ 
+ </header></body></html>
