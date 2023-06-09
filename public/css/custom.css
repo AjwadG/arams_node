@@ -7,7 +7,15 @@ h2 {
 
 h1{
     text-align: center;
+    font-size: 3rem;
+    
 }
+
+@media (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 
 img {
     display: block;
@@ -75,8 +83,23 @@ button {
     
 }
 #banner {
+    background-image: url('path/to/image.jpg');
+    background-position: center center;
     background-size: cover;
-}
+    background-repeat: no-repeat;
+    height: 400px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+  }
+  
+  @media (max-width: 768px) {
+    #banner {
+      background-size:cover;
+      height: 440px;
+    }
+  }
+
 
 .top-bar {
     position: fixed;
